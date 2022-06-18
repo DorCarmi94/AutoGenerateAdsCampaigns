@@ -1,0 +1,63 @@
+application_version: "1.2.7"
+n_images: 5
+n_titles: 5
+shutterstock: {
+  "enabled": true,
+  "enable_download": true,
+  "format": "{}v2/images/search?query={}",
+  "download_format": "{}v2/images/licenses",
+  "redownload_format": "{}v2/images/licenses/{}/downloads",
+  "endpoint": "https://api.shutterstock.com/",
+  "key": "wXSSYI3pgxWUp7VNLZzTs4fMTF7pZe7G",
+  "secret": "ROp1Go4PGrelOAkR",
+  "subscription": "853af21f74594c5c82604cc897cab100",
+  "token": "v2/d1hTU1lJM3BneFdVcDdWTkxaelRzNGZNVEY3cFplN0cvMzMyMDM5MjQzL2N1c3RvbWVyLzQvbDIwM2xfMzVmRDFSdUJ4SDlPZERQaUUtWGNyV2pNNGVlaDhxZmZCenNybUN5U29iOW94MU9FZ3JVRnlXX0NmM1Nhb3dsYmZXTmwxYTFKVWVhQVdTWmQydzBHeWh1QmdZaFYwVmxDanQ0NEdtU05KaXN3bFN6ak8zNnhEa2lIQm1UbEFFMGtyUUFiLTZMSG9xclVfTWRuSUVTcDNLYVZyeHBPamx4b1o2b0JmMHYtMmJfZFJHa1lQQTlIQ2htbWxyM25EVnZLSjN6RXZoZ1VBcWtEMGNRQS85Yi03RG1Ya1lSYTJ5eGU3M3JZb2lB"
+}
+pexels: {
+  "enabled": true,
+  "format": "{}v1/search?query={}&per_page={}&page={}",
+  "endpoint": "https://api.pexels.com/",
+  "key": "563492ad6f9170000100000107253c3ca48f4b359faa4865687e2344"
+}
+pixabay: {
+  "enabled": true,
+  "format": "{}?key={}&q={}",
+  "endpoint": "https://pixabay.com/api/",
+  "key": "24488914-65d8836038623f21ceb7dafbb"
+}
+google_lense: {
+  "enabled": false,
+  "format": "{}v1/images:annotate?key={}",
+  "endpoint": "https://vision.googleapis.com/",
+  "key": "AIzaSyCi69nv2QMf8I1jkm0SG2RKFRWt_YfBquU",
+  "n_google_lables": 30,
+  "app_credentials": "GoogleLense/bguoptimusfinalproject-9853dba05ee6.json"
+}
+outbrain: {
+  "width": 1200,
+  "height": 800
+}
+taboola: {
+  "width": 1000,
+  "height": 600
+}
+openai: {
+  "company": "optimusq",
+  "OPENAI_API_KEY": "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",
+  "titles_model": "curie:ft-optimusq-2021-12-13-21-49-55",
+  "cat_model": "curie:ft-optimusq-2021-12-13-22-46-41",
+  "timeout": 10
+}
+sql: {
+  "enabled": true,
+  "connection_string": 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=tcp:campmandbdev.database.windows.net,1433;DATABASE=campmandb_Copy;UID=c4MpM4n;PWD=Pu06l-OS=lTh',
+  "images_table_name": 'AutoCreativeImages',
+  "titles_table_name": 'AutoCreativeTitles',
+  "keywords_table_name": 'AutoCreativeKeywords',
+  "traces_table_name": 'AutoCreativeTraces',
+  "statistics_table_name": 'AutoCreativeStatistics'
+}
+statistics: {
+  "demo_generate_stats": true,
+  "stats_max_value": 10000
+}

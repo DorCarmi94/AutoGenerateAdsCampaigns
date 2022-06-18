@@ -1,1 +1,1 @@
-# AutoGenerateAdsCampaigns
+# content creation application by OptimusQ
